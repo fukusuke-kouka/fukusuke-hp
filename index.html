@@ -1,0 +1,434 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>買取福助｜出張・催事・宅配の高価買取専門店（千葉県松戸市）</title>
+<meta name="description" content="買取福助は貴金属・宝石・ブランド品・カメラ・腕時計を中心に、催事買取・出張買取・宅配買取に対応する高価買取専門店です。出張エリアは東京・千葉・神奈川・埼玉・茨城。査定・出張費は無料、お問い合わせはLINEで承ります。">
+<!--
+  ============================================================
+  買取福助（高価買取専門店）ホームページ
+  ------------------------------------------------------------
+  ・1ファイル完結。ロゴは六角形プレースホルダー（要差し替え）。
+  ・クライアント回答（2026-09-09, 2026-09-13, 2026-09-18）を反映済み。
+  ・ロゴは受領PDF（【納品】ロゴ.pdf）を600dpiでラスタライズし、背景透過＋2色展開（紺版/生成り版）した
+    ものを assets/logo-navy.png, assets/logo-kinari.png として使用中。favicon一式も紺版から生成済み。
+  ・ヒーロー／フッターのロゴは「金の六角形フレーム＋生成り着色」をやめ、ロゴ色は元の紺のまま、
+    横幅いっぱいの生成りラベル帯（.hero-logo-band / .footer-logo-band）の上に乗せる方式に変更（2026-09-18）。
+    ヘッダーは枠なしで紺ロゴを直置き。
+  ・LINE友だち追加URLは確定済み（https://line.me/R/ti/p/@035bjwvp）。ヘッダー/ヒーロー/会社概要/お問い合わせの4か所に設定済み（2026-09-23）。
+  ・独自ドメインは不要とのクライアント回答あり（2026-09-23）。GitHub Pages等の無料サブドメイン（例: ユーザー名.github.io/fukusuke）での公開を想定。
+  ・残タスク（.ph = 朱色表示 の箇所）:
+      1. 受付時間・定休日 … 会社概要の該当行
+      2. 取扱品目アイコンは暫定の線画SVG。正式素材があれば差し替え可
+  ・配色はのれん（名刺）準拠：紺 #1b2140 ／ 金 #c8a24c ／ 生成り #efe6d4
+  ============================================================
+-->
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+
+<style>
+  :root{
+    color-scheme: light;   /* 常に和紙（明るい）配色に固定。ダークモードには追従しない */
+    /* --- 和風パレット（のれん準拠） --- */
+    --kon:      #1b2140;   /* 紺（濃紺） */
+    --kon-deep: #141931;   /* さらに濃い紺 */
+    --kin:      #c8a24c;   /* 金 */
+    --kin-lite: #ddc487;   /* 淡い金 */
+    --kinari:   #efe6d4;   /* 生成り */
+    --washi:    #f6f0e2;   /* 和紙（本文地） */
+    --sumi:     #23262d;   /* 墨（本文文字） */
+    --sumi-soft:#5c5647;   /* 弱い墨（補足文字・生成り地の上） */
+    --line:     #cdbf9f;   /* 罫線 */
+    --shu:      #b5462f;   /* 朱（未確定プレースホルダーの色） */
+    --line-green:#06c755;  /* LINEブランドカラー（補助的に使用） */
+
+    --bg:        var(--washi);
+    --fg:        var(--sumi);
+    --fg-soft:   var(--sumi-soft);
+    --panel:     #fffdf7;
+    --band:      #efe6d4;   /* 明るい帯セクションの地色 */
+    --hairline:  var(--line);
+    --accent:    var(--kin);
+
+    --maxw: 980px;
+    --step-0: 1rem;
+    --step-1: 1.15rem;
+    --step-2: 1.5rem;
+    --step-3: 2rem;
+    --step-4: 2.9rem;
+
+    --serif: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
+    --sans:  "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:var(--sans);
+    font-size:var(--step-0);
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{ font-family:var(--serif); font-weight:700; line-height:1.4; text-wrap:balance; margin:0; }
+  p{ margin:0; }
+  a{ color:inherit; }
+  :focus-visible{ outline:2px solid var(--kin); outline-offset:3px; }
+
+  .wrap{ max-width:var(--maxw); margin-inline:auto; padding-inline:24px; }
+
+  /* ============ ヘッダー ============ */
+  .site-head{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding-block:16px;
+  }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand .mark{ height:40px; width:auto; display:block; }
+  .brand .name{ font-family:var(--serif); font-weight:700; font-size:1.15rem; letter-spacing:.14em; white-space:nowrap; }
+  .head-line{
+    font-family:var(--serif); font-size:1.02rem; letter-spacing:.06em; text-decoration:none;
+    white-space:nowrap; border:1px solid var(--kin); border-radius:2px; padding:8px 18px;
+    background:var(--panel);
+  }
+  .head-line small{ display:block; font-family:var(--sans); font-size:.7rem; letter-spacing:.18em; color:var(--fg-soft); }
+
+  /* ============ ヒーロー ロゴ帯（横いっぱいの生成りラベルにロゴを乗せる） ============ */
+  .hero-logo-band{
+    background:var(--panel);
+    border-block:1px solid var(--kin);
+    padding:20px 0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-logo-band img{ height:110px; width:auto; display:block; }
+
+  /* ============ ヒーロー（のれん意匠） ============ */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(120% 90% at 50% 0%, #262d55 0%, var(--kon) 50%, var(--kon-deep) 100%);
+    color:var(--kinari);
+    overflow:hidden;
+  }
+  .hero-inner{
+    position:relative; z-index:1;
+    padding-block:40px 104px;
+  }
+  .noren-hem{
+    position:relative; z-index:2;
+    height:90px; background:var(--band);
+    border-top:3px solid var(--kin);
+    border-radius:100% 100% 0 0 / 90px 90px 0 0;
+    margin-top:-46px;
+  }
+  .hero-main{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    gap:18px; max-width:34rem; margin-inline:auto;
+  }
+  .hero .yago{ font-size:var(--step-4); letter-spacing:.14em; margin:0; }
+  .hero .yago-sub{
+    font-family:var(--serif); letter-spacing:.3em; font-size:.95rem;
+    color:var(--kin-lite);
+    display:flex; align-items:center; gap:14px;
+  }
+  .hero .yago-sub::before,.hero .yago-sub::after{ content:""; width:34px; height:1px; background:var(--kin); }
+  .hero-lead{ font-family:var(--serif); font-size:var(--step-1); color:var(--kinari); max-width:30ch; }
+  .hero-note{ font-size:.82rem; letter-spacing:.08em; color:var(--kin-lite); }
+
+  .btn{
+    display:inline-block; font-family:var(--serif); letter-spacing:.14em;
+    background:var(--kin); color:var(--kon-deep); text-decoration:none;
+    padding:14px 34px; border-radius:2px; border:1px solid var(--kin-lite);
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn:hover{ background:var(--kin-lite); transform:translateY(-1px); }
+  .btn small{ display:block; font-family:var(--sans); font-size:.7rem; letter-spacing:.14em; opacity:.75; margin-top:2px; }
+
+  /* ============ セクション共通 ============ */
+  section{ padding-block:64px; }
+  .sec-head{ text-align:center; margin-bottom:40px; }
+  .sec-head .ja{ font-size:var(--step-3); letter-spacing:.12em; }
+  .sec-head .en{
+    display:block; font-family:var(--sans); font-size:.7rem; letter-spacing:.35em;
+    color:var(--accent); margin-top:8px; text-transform:uppercase;
+  }
+  .sec-head .ja::after{
+    content:""; display:block; width:44px; height:2px; background:var(--accent);
+    margin:14px auto 0;
+  }
+
+  /* ============ 取扱品目 ============ */
+  .goods{ background:var(--band); }
+  .goods-list{
+    list-style:none; margin:0; padding:0;
+    display:grid; grid-template-columns:repeat(5,1fr);
+  }
+  .goods-list li{
+    text-align:center; padding:20px 8px;
+    font-family:var(--serif); font-size:1.05rem; letter-spacing:.08em;
+    border-right:1px solid var(--hairline);
+  }
+  .goods-list li:last-child{ border-right:0; }
+  .goods-list .ico{
+    display:block; margin:0 auto 8px; color:var(--accent);
+  }
+  .goods-list .ico svg{ width:30px; height:30px; display:block; margin:0 auto; }
+
+  /* ============ 選ばれる理由（のれん3項目） ============ */
+  .reasons{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+  }
+  .reason{ padding:28px 26px; border-right:1px solid var(--hairline); }
+  .reason:last-child{ border-right:0; }
+  .reason .n{
+    font-family:var(--serif); font-size:.8rem; letter-spacing:.3em; color:var(--accent);
+  }
+  .reason h3{ font-size:var(--step-2); letter-spacing:.08em; margin:6px 0 10px; }
+  .reason p{ color:var(--fg-soft); font-size:.95rem; }
+
+  /* ============ 買取の流れ ============ */
+  .flow{ background:var(--band); }
+  .flow-list{
+    list-style:none; margin:0; padding:0;
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+  }
+  .flow-list li{
+    background:var(--panel); border:1px solid var(--hairline);
+    padding:22px 18px; text-align:center;
+  }
+  .flow-list .step{
+    font-family:var(--serif); font-size:.75rem; letter-spacing:.25em;
+    color:var(--accent); display:block; margin-bottom:8px;
+  }
+  .flow-list h3{ font-size:1.1rem; letter-spacing:.06em; }
+  .flow-list p{ font-size:.85rem; color:var(--fg-soft); margin-top:6px; }
+
+  /* ============ 買取のご案内 / 会社概要 共通テーブル ============ */
+  .about-table{ width:100%; border-collapse:collapse; font-size:.95rem; }
+  .about-table th,.about-table td{
+    text-align:left; padding:14px 16px; border-bottom:1px solid var(--hairline);
+    vertical-align:top;
+  }
+  .about-table th{
+    width:34%; font-family:var(--serif); font-weight:600; letter-spacing:.08em;
+    color:var(--fg); white-space:nowrap;
+  }
+  .ph{ color:var(--shu); font-family:var(--sans); font-size:.9em; }
+
+  /* ============ お問い合わせ ============ */
+  .contact{
+    background:
+      radial-gradient(120% 120% at 50% 0%, #232a52 0%, var(--kon) 55%, var(--kon-deep) 100%);
+    color:var(--kinari); text-align:center;
+  }
+  .contact .sec-head .ja{ color:var(--kinari); }
+  .contact .sec-head .ja::after{ background:var(--kin); }
+  .contact-lead{ font-family:var(--serif); font-size:var(--step-1); margin-bottom:28px; }
+  .line-cta{
+    display:inline-block; text-decoration:none;
+    background:var(--kin); color:var(--kon-deep);
+    font-family:var(--serif); letter-spacing:.14em;
+    padding:18px 44px; border-radius:2px; border:1px solid var(--kin-lite);
+    transition:transform .15s ease, background .15s ease;
+  }
+  .line-cta:hover{ background:var(--kin-lite); transform:translateY(-1px); }
+  .line-cta .big{ font-size:1.25rem; display:block; }
+  .line-cta small{ display:block; font-family:var(--sans); font-size:.72rem; letter-spacing:.14em; opacity:.8; margin-top:4px; }
+  .line-cta--sm{ padding:9px 22px; font-size:.9rem; letter-spacing:.08em; margin-bottom:6px; }
+  .contact-sub{ margin-top:22px; font-size:.88rem; color:var(--kinari); opacity:.85; }
+  .contact-sub strong{ color:var(--kin-lite); font-weight:400; }
+
+  /* ============ フッター ============ */
+  .site-foot{
+    background:var(--kon-deep); color:var(--kinari);
+    text-align:center; font-size:.8rem; letter-spacing:.08em;
+  }
+  .footer-logo-band{
+    background:var(--panel);
+    border-block:1px solid var(--kin);
+    padding:14px 0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .footer-logo-band img{ height:52px; width:auto; display:block; }
+  .foot-info{ padding-block:18px 26px; }
+  .foot-info .name{
+    display:block; font-family:var(--serif); font-weight:700; font-size:1.05rem;
+    letter-spacing:.14em; color:var(--kinari); margin-bottom:10px;
+  }
+  .site-foot .lic{ display:block; margin-top:6px; color:var(--kin-lite); font-size:.75rem; letter-spacing:.06em; }
+
+  /* ============ レスポンシブ ============ */
+  @media (max-width:760px){
+    :root{ --step-4:2.1rem; --step-3:1.6rem; }
+    .hero-inner{ padding-block:44px 84px; }
+    .site-head{ flex-direction:column; align-items:center; gap:10px; }
+    .goods-list{ grid-template-columns:repeat(2,1fr); row-gap:8px; }
+    .goods-list li{ border-right:0; }
+    .goods-list li:nth-child(odd){ border-right:1px solid var(--hairline); }
+    .goods-list li:last-child{ grid-column:1 / -1; border-right:0; }
+    .reasons{ grid-template-columns:1fr; }
+    .reason{ border-right:0; border-bottom:1px solid var(--hairline); }
+    .reason:last-child{ border-bottom:0; }
+    .flow-list{ grid-template-columns:1fr 1fr; }
+    .about-table th{ width:40%; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{ transition:none !important; }
+  }
+</style>
+
+<header class="wrap site-head">
+  <div class="brand">
+    <img class="mark" src="assets/logo-navy.png" alt="買取福助 ロゴ">
+    <span class="name">買取福助</span>
+  </div>
+  <a class="head-line" href="https://line.me/R/ti/p/@035bjwvp">
+    LINEでお問い合わせ
+    <small>友だち追加はこちら</small>
+  </a>
+</header>
+
+<!-- ============ ヒーロー ============ -->
+<section class="hero on-dark" style="padding:0">
+  <div class="hero-logo-band">
+    <img src="assets/logo-navy.png" alt="買取福助 ロゴ">
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-main">
+      <h1 class="yago">買取福助</h1>
+      <p class="yago-sub">高価買取専門店</p>
+      <p class="hero-lead">ご自宅に眠っているお品物を、丁寧に査定いたします。</p>
+      <a class="btn" href="https://line.me/R/ti/p/@035bjwvp">
+        LINEでお問い合わせ
+        <small>ご相談・お見積り・お電話は、すべてこちらの窓口から</small>
+      </a>
+      <p class="hero-note">催事買取・出張買取・宅配買取／出張エリア：東京・千葉・神奈川・埼玉・茨城</p>
+    </div>
+  </div>
+</section>
+<div class="noren-hem"></div>
+
+<!-- ============ 取扱品目 ============ -->
+<section class="goods">
+  <div class="wrap">
+    <div class="sec-head"><span class="ja">取扱品目</span><span class="en">Items</span></div>
+    <ul class="goods-list">
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="15" r="6"/><path d="M8.5 9 12 3l3.5 6"/></svg></span>貴金属</li>
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 9h14l-2.5-5h-9L5 9Z"/><path d="M5 9l7 12 7-12"/><path d="M9.5 9 12 4l2.5 5"/></svg></span>宝石</li>
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 8V6a3 3 0 0 1 6 0v2"/><rect x="4.5" y="8" width="15" height="12" rx="1.5"/></svg></span>ブランド品</li>
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9.5A1.5 1.5 0 0 1 5.5 8h2l1.2-1.6A1.5 1.5 0 0 1 9.9 5.8h4.2a1.5 1.5 0 0 1 1.2.6L16.5 8h2A1.5 1.5 0 0 1 20 9.5v7A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-7Z"/><circle cx="12" cy="13" r="3.2"/></svg></span>カメラ</li>
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="6"/><path d="M12 9v3l2 1.5"/><path d="M9.5 3h5l-.5 3.5h-4L9.5 3Z"/><path d="M9.5 21h5l-.5-3.5h-4L9.5 21Z"/></svg></span>腕時計</li>
+    </ul>
+    <p style="text-align:center;margin-top:20px;color:var(--fg-soft);font-size:.9rem">
+      このほか、楽器・古銭・切手・音響機器なども承ります。品目に迷われた際は、まずはお気軽にご相談ください。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 選ばれる理由 ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="ja">買取福助が選ばれる理由</span><span class="en">Reasons</span></div>
+    <div class="reasons">
+      <div class="reason">
+        <span class="n">其の一</span>
+        <h3>安心・丁寧</h3>
+        <p>大切なお品物を真心こめて査定します。</p>
+      </div>
+      <div class="reason">
+        <span class="n">其の二</span>
+        <h3>高価買取</h3>
+        <p>市場相場を熟知した高価査定を実現します。</p>
+      </div>
+      <div class="reason">
+        <span class="n">其の三</span>
+        <h3>最短即日現金化</h3>
+        <p>スピーディーに、その場で現金化が可能です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 買取の流れ ============ -->
+<section class="flow">
+  <div class="wrap">
+    <div class="sec-head"><span class="ja">買取の流れ</span><span class="en">Flow</span></div>
+    <ol class="flow-list">
+      <li><span class="step">壱</span><h3>LINEでご相談</h3><p>友だち追加してお品物をご連絡ください。</p></li>
+      <li><span class="step">弐</span><h3>査定</h3><p>催事・ご出張・ご郵送で丁寧に査定します。</p></li>
+      <li><span class="step">参</span><h3>ご成約</h3><p>金額にご納得いただけたら成約です。</p></li>
+      <li><span class="step">四</span><h3>お支払い</h3><p>現金またはお振込。最短即日で現金化。</p></li>
+    </ol>
+    <p style="text-align:center;margin-top:20px;color:var(--fg-soft);font-size:.9rem">
+      催事買取・出張買取・宅配買取に対応。出張費・査定料は無料です。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 買取のご案内 ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="ja">買取のご案内</span><span class="en">Guide</span></div>
+    <table class="about-table">
+      <tbody>
+        <tr><th>買取方法</th><td>催事買取／出張買取／宅配買取</td></tr>
+        <tr><th>出張対応エリア</th><td>東京都・千葉県・神奈川県・埼玉県・茨城県</td></tr>
+        <tr><th>出張費・査定料</th><td>無料</td></tr>
+        <tr><th>お支払い方法</th><td>現金 または お振込</td></tr>
+        <tr><th>本人確認</th><td>ご本人さまを確認できる書類（運転免許証など）が必ず必要です。</td></tr>
+        <tr><th>クーリング・オフ</th><td>出張買取のみ対象です（催事買取・宅配買取は対象外）。詳細は査定時にご説明いたします。</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 会社概要 ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="ja">会社概要</span><span class="en">Company</span></div>
+    <table class="about-table">
+      <tbody>
+        <tr><th>屋号</th><td>買取福助</td></tr>
+        <tr><th>代表者</th><td>芳賀 優介</td></tr>
+        <tr><th>お問い合わせ</th><td><a class="line-cta line-cta--sm" href="https://line.me/R/ti/p/@035bjwvp">LINEでお問い合わせ</a><br><span style="color:var(--fg-soft);font-size:.85em">ご相談・お見積り・お電話は、すべてこちらのLINEから承ります。</span></td></tr>
+        <tr><th>受付時間</th><td><span class="ph">〔10:00 - 19:00 / 定休日：　　　　〕</span></td></tr>
+        <tr><th>古物商許可番号</th><td>千葉県公安委員会 第441410000697号</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ お問い合わせ ============ -->
+<section class="contact on-dark" id="contact">
+  <div class="wrap">
+    <div class="sec-head"><span class="ja">お問い合わせ</span><span class="en">Contact</span></div>
+    <p class="contact-lead">査定は無料です。ご相談・お見積り・お電話まで、お問い合わせの窓口はこちらのLINE1つです。</p>
+    <a class="line-cta" href="https://line.me/R/ti/p/@035bjwvp">
+      <span class="big">LINEでお問い合わせ</span>
+      <small>友だち追加して、ご相談・通話ができます</small>
+    </a>
+    <p class="contact-sub">
+      お電話をご希望の方も、まずは友だち追加のうえ<strong>LINE通話</strong>をご利用ください。<br>
+      お品物の写真を送っていただくと、より早くお見積りが可能です。
+    </p>
+  </div>
+</section>
+
+<footer class="site-foot on-dark">
+  <div class="footer-logo-band">
+    <img src="assets/logo-navy.png" alt="買取福助 ロゴ">
+  </div>
+  <div class="foot-info">
+    <span class="name">買取福助</span>
+    <div>&copy; <span id="y"></span> 買取福助 ／ 高価買取専門店</div>
+    <span class="lic">古物商許可：千葉県公安委員会 第441410000697号</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
